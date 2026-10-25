@@ -1,0 +1,36 @@
+/* A neon skyline behind the homepage copy and wardrobe. */
+.cityscape{
+  position:absolute;
+  z-index:1;
+  left:0;
+  right:0;
+  bottom:9.3%;
+  height:43%;
+  pointer-events:none;
+  overflow:hidden;
+  opacity:.69;
+  -webkit-mask-image:linear-gradient(90deg,#0008,#000 16%,#000 84%,#0009);
+  mask-image:linear-gradient(90deg,#0008,#000 16%,#000 84%,#0009);
+}
+.cityscape svg{display:block;width:100%;height:100%;overflow:visible}
+.cityscape .city-building{
+  --rise-delay:1.2s;
+  clip-path:inset(100% 0 0 0);
+  animation:city-rise 1.8s var(--rise-delay) cubic-bezier(.16,.74,.22,1) forwards;
+}
+.cityscape .city-far{opacity:.35}
+.cityscape .city-shell{fill:#100a1b;fill-opacity:.4;stroke:#b66cdf;stroke-opacity:.58;stroke-width:2.2;vector-effect:non-scaling-stroke}
+.cityscape .city-far .city-shell{fill:#151021;fill-opacity:.34;stroke-opacity:.36}
+.cityscape .city-edge{fill:none;stroke:#dd95ff;stroke-opacity:.44;stroke-width:1.4;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 4px #b45be4)}
+.cityscape .city-far .city-edge{stroke-opacity:.25;filter:none}
+.cityscape .city-roof-light{fill:#e9e68a;filter:drop-shadow(0 0 7px #e9e68a)}
+.cityscape .city-window{fill:#d7a6ee;fill-opacity:.06;stroke:#ba82d8;stroke-opacity:.15;stroke-width:1;vector-effect:non-scaling-stroke}
+.cityscape .city-window.lit{fill:#e9e68a;fill-opacity:0;stroke:#f9e9aa;stroke-opacity:0;filter:drop-shadow(0 0 5px #e9e68a);animation:city-window-on .7s var(--light-delay) ease-out forwards,city-window-pulse 5s calc(var(--light-delay) + .7s) ease-in-out infinite}
+.cityscape .city-window.lit.violet{fill:#d994ff;stroke:#f4c5ff;filter:drop-shadow(0 0 5px #cc73f7)}
+.cityscape .city-ground{stroke:#c273ef;stroke-width:2;stroke-opacity:.55;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 7px #bf65ed)}
+@keyframes city-rise{0%{clip-path:inset(100% 0 0 0)}100%{clip-path:inset(0 0 0 0)}}
+@keyframes city-window-on{to{fill-opacity:.72;stroke-opacity:.82}}
+@keyframes city-window-pulse{0%,100%{opacity:1}50%{opacity:.65}}
+@media(max-width:900px){.cityscape{bottom:5%;height:41%;opacity:.62}}
+@media(max-width:560px){.cityscape{height:37%;opacity:.56}.cityscape svg{width:180%;margin-left:-40%}}
+@media(prefers-reduced-motion:reduce){.cityscape .city-building{animation:none;clip-path:none}.cityscape .city-window.lit{animation:none;fill-opacity:.72;stroke-opacity:.82}}

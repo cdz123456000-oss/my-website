@@ -1,0 +1,13 @@
+.wardrobe-art{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 20px #a000ff44)}
+.cabinet:not(.move) .wardrobe-art *{animation-play-state:paused!important}
+.hero-copy{pointer-events:none}.editing .hero-copy [data-edit]{pointer-events:auto}
+.wardrobe-art .label{cursor:pointer;outline:none}.wardrobe-art .label:hover .tag,.wardrobe-art .label:focus-visible .tag{stroke:#fff3b2;stroke-width:7}
+.wardrobe-art .label:hover .tag-name,.wardrobe-art .label:focus-visible .tag-name{filter:drop-shadow(0 0 5px #fff)}
+body.tag-transition{overflow:hidden}body.tag-transition .wardrobe-art .label{pointer-events:none}body.tag-transition .cursor-sign{visibility:hidden}
+.falling-tag{position:fixed;z-index:1000;pointer-events:none;will-change:transform;overflow:visible;perspective:650px}
+.falling-tag .paper-half{position:absolute;inset:0;will-change:transform;transform-style:preserve-3d}.paper-half.left{transform-origin:0 50%}.paper-half.right{transform-origin:100% 50%}
+.falling-tag .paper-strip{position:absolute;inset:0;background-size:100% 100%;background-repeat:no-repeat;will-change:transform;backface-visibility:visible}
+.falling-tag .paper-strip:after{content:"";position:absolute;inset:0;opacity:var(--curl-light,0);background:linear-gradient(90deg,transparent 30%,#ffffff50 47%,#08000a66 53%,transparent 70%)}
+.falling-tag .paper-edge{position:absolute;inset:0;width:100%;height:100%;overflow:visible;fill:none;stroke:#f7ccff;stroke-width:1;filter:drop-shadow(0 0 2px #e27aff);opacity:.7}
+.falling-tag .tear-dots{position:absolute;left:50%;top:4%;bottom:4%;width:0}.tear-dots i{position:absolute;left:-1.5px;width:0;border-left:3px dashed #050305;filter:none}.tear-dots .upper{top:0;height:50%}.tear-dots .lower{bottom:0;height:50%}
+.transition-notice{position:fixed;left:1px;top:1px;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}

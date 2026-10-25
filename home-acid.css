@@ -1,0 +1,30 @@
+/* Static acid-art layers. Existing animation definitions, timing and interaction stay in their original files. */
+.acid-depth,.acid-front{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.acid-depth{z-index:1;mix-blend-mode:screen}
+.acid-front{z-index:4}
+.acid-depth img{position:absolute;display:block;pointer-events:none;user-select:none}
+.acid-mesh{width:100%;height:100%;object-fit:fill;opacity:.68}
+.acid-chrome{left:40.5%;top:10%;width:190px;height:190px;object-fit:contain;mix-blend-mode:screen;opacity:.86}
+.acid-halftone{position:absolute;width:32%;height:25%;right:-4%;bottom:8%;background-image:radial-gradient(#c0a2da55 .8px,transparent 1px);background-size:5px 5px;mask-image:radial-gradient(ellipse at 72% 65%,#000,transparent 70%);transform:rotate(-16deg)}
+.acid-lens{position:absolute;right:-8%;top:25%;width:26%;height:27%;border:1px solid #ceaae32e;border-radius:50%;transform:rotate(-34deg);background:linear-gradient(155deg,#e3caff05 8%,#d2b9e412 39%,#f8eaff30 40%,#51345906 41%,transparent 74%);box-shadow:inset 0 0 30px #b49cc50b}
+.acid-star{position:absolute;left:45%;top:66%;width:clamp(44px,4.8vw,76px);height:auto;transform:rotate(12deg);filter:drop-shadow(3px 8px 7px #0009)}
+.acid-orbit-mark{position:absolute;left:43.7%;top:68%;width:8.7%;height:3.5%;border:1px solid #e9e646b3;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 12px #e9e6460a}
+.acid-register{position:absolute;width:17px;height:17px;background:linear-gradient(#e9e64699,#e9e64699) center/1px 100% no-repeat,linear-gradient(#e9e64699,#e9e64699) center/100% 1px no-repeat}
+.acid-register-top{left:38%;top:12%}
+.acid-register-bottom{right:3%;bottom:5%}
+.acid-barcode{position:absolute;right:7%;bottom:4.8%;width:56px;height:16px;opacity:.45;background:repeating-linear-gradient(90deg,#c5a3d1 0 1px,transparent 1px 4px,#c5a3d1 4px 6px,transparent 6px 8px,#c5a3d1 8px 9px,transparent 9px 13px);transform:skew(-13deg)}
+html[data-concept="a"] .brand{border-color:#d5bbeb35;background:linear-gradient(135deg,#32243c91,#110d17de);box-shadow:inset 0 1px 0 #e7d7ff18}
+html[data-concept="a"] .nav{border-color:#d5bbeb30;box-shadow:inset 0 1px 0 #e7d7ff12}
+html[data-concept="a"] .primary{box-shadow:4px 4px 0 #08050e,5px 5px 0 #e9e64655}
+@media(max-width:1100px) and (min-width:901px){.acid-chrome{left:40%;width:145px;height:145px}.acid-star{left:44%}.acid-orbit-mark{left:42%}}
+@media(max-width:900px){
+  .acid-mesh{top:38%;height:62%;width:140%;left:-38%;opacity:.5}
+  .acid-chrome{left:auto;right:-12px;top:11%;width:140px;height:140px;opacity:.65}
+  .acid-lens{top:54%;right:-18%;width:55%;height:20%}
+  .acid-star{left:auto;right:6%;top:40%;width:43px}
+  .acid-orbit-mark{left:auto;right:3%;top:41.5%;width:20%;height:2%}
+  .acid-register-top{left:auto;right:5%;top:33%}
+  .acid-register-bottom,.acid-barcode{display:none}
+  .acid-halftone{width:64%;height:22%;bottom:5%}
+}
+@media(max-width:560px){.acid-chrome{top:10%;right:-34px;width:125px;height:125px;opacity:.5}.acid-star{top:44%;right:9%;width:32px}.acid-orbit-mark{top:45%;right:5%;width:22%}.acid-register-top{top:31%;right:7%}}

@@ -1,0 +1,9 @@
+.site-corner-watermark{position:fixed;z-index:999;top:14px;right:clamp(16px,3vw,52px);display:block;width:clamp(104px,8vw,150px);height:auto;pointer-events:none;opacity:.84;filter:url(#studio-light-ink) drop-shadow(0 2px 5px #000c)}
+.has-studio-watermarks .hero>header{min-height:100px}
+.has-studio-watermarks .hero>header .brand,.has-studio-watermarks .hero>header .nav{display:none}
+.has-studio-watermarks .topbar .edition{margin-right:clamp(112px,10vw,165px)}
+.studio-photo-watermark{position:absolute!important;z-index:12!important;left:50%!important;top:50%!important;right:auto!important;bottom:auto!important;display:block!important;width:clamp(44px,27%,105px)!important;height:auto!important;aspect-ratio:1677/938!important;padding:0!important;margin:0!important;border:0!important;background:transparent url('assets/studio-watermark.png') center/contain no-repeat!important;box-shadow:none!important;opacity:.72;filter:url(#studio-light-ink) drop-shadow(0 1px 3px #000) drop-shadow(0 0 4px #000)!important;pointer-events:none!important;transform:translate(-50%,-50%)!important;backface-visibility:visible!important}
+.card-face>.studio-photo-watermark{top:calc((100% - 32px)/2)!important}
+.studio-dialog-image{position:relative;display:block}
+.studio-dialog-image>.studio-photo-watermark{width:clamp(72px,24%,120px)!important}
+@media(max-width:760px){.site-corner-watermark{top:13px;right:12px;width:80px}.has-studio-watermarks .topbar .edition{margin-right:78px}.studio-photo-watermark{width:clamp(38px,25%,75px)!important}}

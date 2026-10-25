@@ -1,0 +1,28 @@
+/* The supplied lettering is a custom illustration, so the title uses the original artwork. */
+html[data-concept="a"] .hero{min-height:100svh}
+html[data-concept="a"] .studio-copy{width:min(49vw,820px);max-width:none;padding:clamp(26px,4.5vh,58px) 0 0 4vw;font-family:"华文行楷","方正舒体","KaiTi","STKaiti",serif}
+.studio-kicker{width:max-content;margin:0 0 9px;font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:clamp(34px,3.1vw,54px);font-weight:900;line-height:1.08;letter-spacing:-.065em;transform:skewX(-11deg) scaleX(.91);transform-origin:left center}
+.studio-kicker .hero-title{display:block;font-family:inherit;font-weight:inherit;-webkit-text-stroke-width:1px;text-shadow:1px 0 #f4eff8}
+html[data-concept="a"] .studio-heading{width:min(29vw,490px);max-width:100%;margin:0;line-height:1}
+.studio-logo-reveal{display:block;overflow:hidden;padding:8px 12px;background:#000;border:1px solid #a86bc8;box-shadow:0 0 0 4px #170d20,0 0 24px #bb69ef69;clip-path:inset(0 100% 0 0);animation:studio-logo-open 1.9s .38s cubic-bezier(.2,.72,.18,1) both}
+.studio-logo-filter{position:absolute;pointer-events:none}
+.studio-logo{display:block;width:100%;height:auto;filter:url(#studio-light-ink) drop-shadow(0 0 5px #eee4f655)}
+@keyframes studio-logo-open{from{clip-path:inset(0 100% 0 0);transform:translateY(16px);opacity:.3}to{clip-path:inset(0 0 0 0);transform:translateY(0);opacity:1}}
+.studio-promise{display:flex;flex-wrap:wrap;gap:0 .28em;width:max-content;max-width:100%;margin:14px 0 12px;color:#f0e86d;font-size:clamp(25px,2.12vw,39px);line-height:1.15;letter-spacing:-.03em;text-shadow:0 0 12px #e9e64655;animation:studio-copy-rise .9s .65s ease-out both}
+.studio-promise:after{content:"";display:block;flex-basis:100%;width:65%;height:1px;margin-top:9px;background:linear-gradient(90deg,#f0e86d,#b877df,transparent)}
+.studio-details{width:100%;max-width:720px;margin-top:2px;color:#f0e8f2;font-family:"华文楷体","KaiTi","STKaiti",serif;font-size:clamp(15px,1.15vw,20px);line-height:1.36;letter-spacing:.01em;animation:studio-copy-rise .9s .85s ease-out both}
+@keyframes studio-copy-rise{from{transform:translateY(18px);opacity:0}to{transform:translateY(0);opacity:1}}
+.studio-details p{margin:0}
+.studio-welcome{color:#fff7e0;font-size:1.13em;margin-bottom:7px!important}
+.studio-details-grid{display:grid;grid-template-columns:1fr;gap:7px}
+.studio-services{display:grid;grid-template-columns:1fr 1fr;gap:4px 13px;padding-left:12px;border-left:2px solid #bd77e8}
+.studio-services p{position:relative;padding-left:14px}
+.studio-services p:before{content:"✦";position:absolute;left:0;color:#e9e646;font-size:.8em}
+.studio-contact{display:grid;grid-template-columns:1fr;gap:2px;padding:6px 10px;background:linear-gradient(90deg,#63318480,#1a112866);border-left:2px solid #e9e646;color:#f4eaa0}
+.studio-contact p{overflow-wrap:anywhere}
+.studio-assurance{margin-top:7px!important;padding-top:6px;border-top:1px dashed #b97edf88;color:#e3d3eb}
+html[data-concept="a"] .cabinet{top:8%;height:78%}
+@media(max-width:1100px){html[data-concept="a"] .studio-copy{width:47vw}html[data-concept="a"] .studio-heading{width:min(35vw,460px)}.studio-details{font-size:13px}.studio-services{grid-template-columns:1fr;gap:4px}}
+@media(max-width:900px){html[data-concept="a"] .hero{min-height:1100px}html[data-concept="a"] .studio-copy{width:min(92vw,700px);padding:26px 0 0 4vw}html[data-concept="a"] .studio-heading{width:min(64vw,520px)}.studio-details{font-size:15px}.studio-services{grid-template-columns:1fr 1fr}html[data-concept="a"] .cabinet{top:58%;left:50%;width:min(92vw,700px);height:39%}}
+@media(max-width:560px){html[data-concept="a"] .hero{min-height:1280px}html[data-concept="a"] .studio-copy{width:calc(100% - 36px);padding:20px 0 0 18px}html[data-concept="a"] .studio-heading{width:min(84vw,440px)}.studio-kicker{font-size:17px;margin-bottom:9px}.studio-promise{font-size:26px;margin:10px 0}.studio-details{font-size:13px;line-height:1.43}.studio-services{grid-template-columns:1fr;gap:4px}.studio-details-grid{gap:8px}.studio-contact{padding:7px 9px}html[data-concept="a"] .cabinet{top:66%;width:100%;height:30%}}
+@media(prefers-reduced-motion:reduce){.studio-logo-reveal,.studio-promise,.studio-details{animation:none;clip-path:none;opacity:1;transform:none}}

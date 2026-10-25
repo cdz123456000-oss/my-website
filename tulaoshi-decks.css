@@ -1,0 +1,8 @@
+/* The third card extends the same opening motion into a three-photo fan. */
+.deck .photo-card{width:31%;height:82%;top:54%}
+.deck .card-0{--angle:-24deg;--shift:-75%}
+.deck .card-1{--angle:0deg;--shift:0%;z-index:5}
+.deck .card-2{--angle:24deg;--shift:75%;z-index:6}
+.pack-body img{filter:brightness(.66)}
+.right .pack-body img{object-position:center 25%}
+@media(max-width:760px){.deck .photo-card{width:30%;height:78%;top:50%}.deck .card-0{--angle:-19deg;--shift:-55%}.deck .card-2{--angle:19deg;--shift:55%}}
